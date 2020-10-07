@@ -169,7 +169,7 @@ hr {
 /* END HOME */
 
 
-/* START WORK */
+/* START PROJECTS */
 
 .tm-padding-top-bottom-100 {
     padding-top: 100px;
@@ -204,7 +204,7 @@ hr {
 }
 
 
-/* END WORK */
+/* END PROJECTS */
 
 
 /* START RESUME */
@@ -222,6 +222,10 @@ hr {
 .resume {
     color: #eb5424;
     text-decoration: none;
+}
+
+#Email {
+    color: #eb5424;
 }
 
 
