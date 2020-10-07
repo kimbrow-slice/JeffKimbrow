@@ -265,21 +265,24 @@ hr {
 }
 
 .facebook:hover,
-.twitter:hover,
-.pinterest:hover {
+.github:hover,
+.linkedin:hover {
     background: #202020;
 }
 
 .facebook {
     background: #3b5998;
+    font-size: 60px;
 }
 
-.twitter {
-    background: #55acee;
+.github {
+    background: #6e5494;
+    font-size: 60px;
 }
 
-.pinterest {
-    background: #cc2127;
+.linkedin {
+    background: #0E76A8;
+    font-size: 60px;
 }
 
 .media {
