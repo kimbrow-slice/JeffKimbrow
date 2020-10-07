@@ -273,16 +273,19 @@ hr {
 .facebook {
     background: #3b5998;
     font-size: 60px;
+    text-align: center;
 }
 
 .github {
     background: #6e5494;
     font-size: 60px;
+    text-align: center;
 }
 
 .linkedin {
     background: #0E76A8;
     font-size: 60px;
+    text-align: center;
 }
 
 .media {
