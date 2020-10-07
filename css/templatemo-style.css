@@ -231,12 +231,16 @@ hr {
 /* START ABOUT */
 
 .tm-about {
-    background: url('../images/about-bg.jpg');
+    background: url('../images/about-me.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     padding-top: 60px;
     padding-bottom: 100px;
+}
+
+.obj {
+    color: #ffffff;
 }
 
 
