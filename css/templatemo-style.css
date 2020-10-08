@@ -176,7 +176,7 @@ hr {
     padding-bottom: 100px;
 }
 
-.tm-work-h3 {
+.tm-projects-h3 {
     color: #eb5424;
     font-size: 20px;
     font-weight: bold;
@@ -184,7 +184,7 @@ hr {
     padding-bottom: 10px;
 }
 
-.work-wrapper {
+.projects-wrapper {
     border: 1px solid #666;
     border-radius: 2px;
     text-align: center;
@@ -193,11 +193,11 @@ hr {
     transition: all 0.6s ease-in;
 }
 
-.work-wrapper:hover {
+.projects-wrapper:hover {
     border-color: #eb5424;
 }
 
-.work-wrapper .fa {
+.projects-wrapper .fa {
     color: #888888;
     font-size: 60px;
     padding-bottom: 40px;
@@ -253,10 +253,6 @@ hr {
 
 
 /* START SOCIAL */
-
-.tm-social {
-    text-transform: uppercase;
-}
 
 .tm-social .container {
     width: 100%;
@@ -319,43 +315,6 @@ hr {
 
 
 /* END SOCIAL */
-
-
-/* START CONTACT */
-
-.tm-contact {
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.form-control {
-    background: transparent;
-    border: 1px solid #666;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.6s ease-in;
-    transition: all 0.6s ease-in;
-}
-
-.form-control:focus,
-.form-control:hover {
-    background: #202020;
-    color: #ffffff;
-}
-
-input {
-    height: 50px;
-}
-
-.tm-contact p {
-    padding-top: 40px;
-}
-
-
-/* END CONTACT */
 
 @media screen and (max-device-width: 1024px) {
     .templatemo-home {
