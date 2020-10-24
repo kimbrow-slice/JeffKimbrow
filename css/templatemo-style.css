@@ -203,6 +203,17 @@ hr {
     padding-bottom: 40px;
 }
 
+.jsSteg {
+    color: #eb5424;
+}
+
+.jsSteg:hover {
+    color: #888888;
+    text-decoration: none;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+}
+
 
 /* END PROJECTS */
 
