@@ -214,6 +214,17 @@ hr {
     transition: all 0.6s ease-in;
 }
 
+.fizzBuzz {
+    color: #eb5424;
+}
+
+.fizzBuzz:hover {
+    color: #888888;
+    text-decoration: none;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+}
+
 
 /* END PROJECTS */
 
