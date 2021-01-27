@@ -13,6 +13,10 @@ body {
     color: #606060;
     position: relative;
 }
+#personal{
+    width: 100%;
+    height: auto;
+}
 
 html,
 body {
