@@ -291,14 +291,14 @@ hr {
     margin: 0;
 }
 
-.facebook:hover,
+.email:hover,
 .github:hover,
 .linkedin:hover {
     background: #202020;
 }
 
-.facebook {
-    background: #3b5998;
+.email {
+    background: #BB001B;
     font-size: 60px;
     text-align: center;
 }
