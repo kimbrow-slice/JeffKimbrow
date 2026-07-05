@@ -1341,35 +1341,145 @@ h6 {
   .gallery .gallery-item img { height: 320px; }
 }
 
-
 /* ==========================================
    Publications
    ========================================== */
 
-.publications-gallery .gallery-item{
-    background:#000;
-    border-radius:12px;
-    overflow:hidden;
+.publications-gallery{
+  margin-top:32px;
 }
 
-.publications-gallery .gallery-item img{
-    width:100%;
-    height:auto;
-    aspect-ratio:3 / 5;
+.publications-gallery .container-fluid{
+  padding-left:24px;
+  padding-right:24px;
+}
 
-    object-fit:contain;
+.publications-gallery .gallery-item{
+  position:relative;
+  background:#000;
+  border-radius:12px;
+  overflow:hidden;
+}
 
-    display:block;
+/* Paper cards: portrait, consistent row */
+.publications-gallery .publication-item img{
+  width:100%;
+  aspect-ratio:3 / 5;
+  height:auto !important;
+  object-fit:contain;
+  display:block;
+  background:#000;
+  border-radius:12px;
+  transition:.25s ease;
+}
 
-    background:#000;
+/* ==========================================
+   DIFFRACTION Series
+   ========================================== */
 
-    transition:.25s ease;
+.publications-gallery .diffraction-row{
+  margin-top:72px;
+  margin-bottom:96px;
+}
+
+.publications-gallery .diffraction-row .col-xl{
+  max-width:520px;
+}
+
+.publications-gallery .diffraction-row .publication-item img{
+  aspect-ratio:auto;
+  height:auto !important;
+  object-fit:contain;
+}
+
+.memoir-gallery .container-fluid{
+    max-width:1700px;
+    margin:auto;
 }
 
 .publications-gallery .gallery-item:hover img{
-    transform:scale(1.02);
+  transform:scale(1.02);
 }
 
 .publications-gallery .gallery-links{
-    background:rgba(0,0,0,.55);
+  background:rgba(0,0,0,.55);
+}
+
+/* Memoir: one wide feature directly below the publication row */
+.publications-gallery .memoir-row{
+  margin-top:48px;
+}
+
+.publications-gallery .memoir-row .col-12{
+  display:flex;
+  justify-content:center;
+}
+
+.publications-gallery .memoir-item{
+  width:min(100%, 1320px);
+  max-width:calc(100vw - 48px);
+}
+
+.publications-gallery .memoir-item img{
+  width:100%;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain;
+  display:block;
+  background:#000;
+  border-radius:12px;
+  transition:.25s ease;
+}
+
+@media (max-width: 991px){
+
+  .publications-gallery .diffraction-row{
+    margin-top:48px;
+    margin-bottom:64px;
+  }
+
+  .publications-gallery .diffraction-row .col-xl{
+    max-width:100%;
+  }
+
+  .publications-gallery .memoir-row{
+    margin-top:36px;
+  }
+
+  .publications-gallery .memoir-item{
+    max-width:calc(100vw - 32px);
+  }
+}
+
+.section-title{
+    font-size:2rem;
+    color:#fff;
+    margin-bottom:.5rem;
+}
+
+.section-subtitle{
+    color:#999;
+    font-style:italic;
+    margin-bottom:0;
+}
+
+.memoir-item img{
+    transition:.3s ease;
+}
+
+.memoir-item:hover img{
+    transform:scale(1.01);
+}
+
+.memoir-gallery{
+    padding-bottom:80px;
+}
+
+.memoir-item img{
+    width:100%;
+    height:auto;
+    display:block;
+
+    object-fit:unset;
+    max-height:none;
 }
