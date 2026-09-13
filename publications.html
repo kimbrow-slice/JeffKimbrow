@@ -1,405 +1,299 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="jeff kimbrow,kimbrowslice, kimbrow-slice,jeffery kimbrow,">
-    <meta name="description" content="Publications — personal process notes, travel, food, and in-between moments alongside photography work." />
-  <title>Publications</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- STYLESHEETS -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR45979F46"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>Publications moved — Jeff Kimbrow</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="The publications archive has moved to Silicon Gremlin.">
 
-  gtag('config', 'G-TR45979F46');
-</script>
+  <link rel="canonical" href="https://silicongremlin.io/publications">
 
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090c10;
+      --panel: #0f141a;
+      --panel-2: #0b1015;
+      --text: #f1f4f7;
+      --muted: #9da7b3;
+      --accent: #8ef0c0;
+      --border: rgba(255,255,255,.10);
+      --border-strong: rgba(142,240,192,.28);
+      --shadow: 0 28px 80px rgba(0,0,0,.45);
+    }
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+    * { box-sizing: border-box; }
 
-   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(142,240,192,.06), transparent 30%),
+        linear-gradient(180deg, #0a0d11 0%, #07090c 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
+    }
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    .shell {
+      width: min(920px, 100%);
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .status {
+      color: var(--accent);
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,.01));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: clamp(34px, 7vw, 72px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .82rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 12ch;
+      font-size: clamp(2.6rem, 8vw, 6.4rem);
+      line-height: .94;
+      letter-spacing: -.055em;
+      font-weight: 650;
+    }
+
+    .lede {
+      margin: 28px 0 0;
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      line-height: 1.75;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: end;
+      padding: 28px clamp(34px, 7vw, 72px);
+      background: var(--panel-2);
+    }
+
+    .route-label {
+      color: var(--muted);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .74rem;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .route {
+      color: var(--text);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: clamp(.92rem, 2vw, 1.02rem);
+      overflow-wrap: anywhere;
+    }
+
+    .route strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid var(--border-strong);
+      color: #08110d;
+      background: var(--accent);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: transparent;
+      border-color: var(--border);
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      filter: brightness(1.06);
+    }
+
+    .button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .redirect {
+      margin-top: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.015);
+      padding: 18px 20px;
+    }
+
+    .redirect-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: baseline;
+      color: var(--muted);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .82rem;
+    }
+
+    #countdown {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .track {
+      width: 100%;
+      height: 3px;
+      margin-top: 14px;
+      background: rgba(255,255,255,.08);
+      overflow: hidden;
+    }
+
+    .bar {
+      width: 100%;
+      height: 100%;
+      background: var(--accent);
+      transform-origin: left center;
+      animation: drain 8s linear forwards;
+    }
+
+    @keyframes drain {
+      from { transform: scaleX(1); }
+      to   { transform: scaleX(0); }
+    }
+
+    @media (max-width: 720px) {
+      body { padding: 18px; }
+      .topline { align-items: flex-start; flex-direction: column; }
+      .details { grid-template-columns: 1fr; align-items: start; }
+      .actions { justify-content: flex-start; }
+      h1 { max-width: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bar { animation: none; }
+    }
+  </style>
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <h1>0x6A656666@SILICON_GREMLIN:~/ $</h1>
-        <img src="assets/img/gallery/SiliconGremlin.jpg" alt="">
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="life-between-photons.html">Life Between Photons</a></li>
-          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery-astro.html">Astrophotography</a></li>
-              <li><a href="gallery-nature.html">Nature and Landscapes</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
+  <div class="shell">
+    <div class="topline">
+      <span>JEFFKIMBROW.COM / PUBLICATIONS</span>
+      <span class="status">ROUTE MIGRATED</span>
     </div>
-  </header>
-  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
-          <h2>
-Publications
-</h2>
-<p class="subtle">
-  Resolution is rarely head-on.
-</p>
-<p>
-A public archive of non-restricted research publications, case studies, and long-form technical writing.
-</p>
-<p>
-  Each card links to its publication record and preserves the work as a citable artifact.
-</p>
-<p>
-  The visual cards are identifiers; the PDFs and DOIs are the record.
-</p>          
+    <main class="card" aria-labelledby="page-title">
+      <section class="hero">
+        <div class="eyebrow">PUBLICATION_ARCHIVE_MOVED</div>
 
+        <h1 id="page-title">Research moved.</h1>
 
+        <p class="lede">
+          The publications archive is no longer maintained on jeffkimbrow.com.
+          Research publications, case studies, and citable artifacts have moved to
+          <strong style="color:var(--text)">Silicon Gremlin</strong>, the public R&amp;D
+          surface for this work.
+        </p>
+      </section>
 
-<pre class="code bash"><code>
-// diffraction != noise
-// it is information, displaced
-</code></pre>
-<br>
-
-<br>
-
-
-
-<!-- diffraction pattern observed: light + structure + patience -->
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section -->
-
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-
-<!-- ======= Gallery Section ======= -->
-<section id="gallery" class="gallery publications-gallery">
-  <div class="container-fluid">
-
-    <!-- Research publication row -->
-    <div class="row gy-4 justify-content-center publication-row">
-      <div class="col-12 text-center">
-  <h2 class="section-title">Foundational Research</h2>
-  <p class="section-subtitle">
-    Foundational Publications
-  </p>
-</div>
-
-      <div class="col-xl col-lg-4 col-md-6">
-        <div class="gallery-item publication-item h-100">
-          <img src="assets/img/gallery/publications/CLPA.png" class="img-fluid" alt="Cross-Linguistic Phonetic Anchors as a Minimal Graph-Based Framework for Rapid Semantic Acquisition">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-            <a href="assets/img/gallery/publications/CLPA.png" title="Cross-Linguistic Phonetic Anchors as a Minimal Graph-Based Framework for Rapid Semantic Acquisition" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.20543425" class="details-link" aria-label="View DOI for Cross-Linguistic Phonetic Anchors"><i class="bi bi-link-45deg"></i></a>
+      <section class="details">
+        <div>
+          <div class="route-label">New canonical location</div>
+          <div class="route">
+            <strong>https://silicongremlin.io/publications</strong>
           </div>
         </div>
-      </div>
 
-      <div class="col-xl col-lg-4 col-md-6">
-        <div class="gallery-item publication-item h-100">
-          <img src="assets/img/gallery/publications/OCITI.png" class="img-fluid" alt="Observability Collapse in Threat Intelligence Reporting: A Cross-Domain Delta Analysis">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-            <a href="assets/img/gallery/publications/OCITI.png" title="Observability Collapse in Threat Intelligence Reporting: A Cross-Domain Delta Analysis" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.20543980" class="details-link" aria-label="View DOI for Observability Collapse in Threat Intelligence Reporting"><i class="bi bi-link-45deg"></i></a>
-          </div>
+        <div class="actions">
+          <a class="button" href="https://silicongremlin.io/publications">
+            Continue now
+          </a>
+          <a class="button secondary" href="index.html">
+            Stay on jeffkimbrow.com
+          </a>
         </div>
+      </section>
+    </main>
+
+    <div class="redirect" role="status" aria-live="polite">
+      <div class="redirect-row">
+        <span>Automatic redirect in <span id="countdown">8</span> seconds.</span>
+        <span>DESTINATION::SILICONGREMLIN.IO</span>
       </div>
-
-      <div class="col-xl col-lg-4 col-md-6">
-        <div class="gallery-item publication-item h-100">
-          <img src="assets/img/gallery/publications/CDRA.png" class="img-fluid" alt="Cross-Domain Reasoning Anchors: An Observational Account of Structural Transfer Across Domains">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-            <a href="assets/img/gallery/publications/CDRA.png" title="Cross-Domain Reasoning Anchors: An Observational Account of Structural Transfer Across Domains" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.20546817" class="details-link" aria-label="View DOI for Cross-Domain Reasoning Anchors"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl col-lg-4 col-md-6">
-        <div class="gallery-item publication-item h-100">
-          <img src="assets/img/gallery/publications/OBNP.png" class="img-fluid" alt="Observability Collapse via Node Progression: A Behavioral Analysis of Constraint-Driven Intake Systems">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-            <a href="assets/img/gallery/publications/OBNP.png" title="Observability Collapse via Node Progression: A Behavioral Analysis of Constraint-Driven Intake Systems" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.21115115" class="details-link" aria-label="View DOI for Observability Collapse via Node Progression"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- DIFFRACTION series row -->
-      <div class="col-12 text-center">
-    <h2 class="section-title">DIFFRACTION</h2>
-    <p class="section-subtitle">
-      Research Program
-    </p>
-  </div>
-<div class="row gy-4 justify-content-center publication-row diffraction-row">
-
-<div class="col-xl col-lg-4 col-md-6">
-  <div class="gallery-item publication-item h-100">
-    <img
-      src="assets/img/gallery/publications/DIFFRACTION_1.png"
-      class="img-fluid"
-      alt="The DIFFRACTION Model: Case Study on Cross-Boundary Fault Propagation in Runtime Systems"
-    >
-    <div class="gallery-links d-flex align-items-center justify-content-center">
-      <a
-        href="assets/img/gallery/publications/DIFFRACTION_1.png"
-        title="The DIFFRACTION Model: Case Study on Cross-Boundary Fault Propagation in Runtime Systems"
-        class="glightbox preview-link"
-      ><i class="bi bi-arrows-angle-expand"></i></a>
-      <a
-        href="https://doi.org/10.5281/zenodo.20800364"
-        class="details-link"
-        aria-label="View DOI for The DIFFRACTION Model: Case Study on Cross-Boundary Fault Propagation in Runtime Systems"
-      ><i class="bi bi-link-45deg"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="col-xl col-lg-4 col-md-6">
-  <div class="gallery-item publication-item h-100">
-    <img
-      src="assets/img/gallery/publications/DIFFRACTION_2.png"
-      class="img-fluid"
-      alt="DIFFRACTION—Spectral Conditioning and N-Boundary Interference Modeling in Modern Runtime Systems"
-    >
-    <div class="gallery-links d-flex align-items-center justify-content-center">
-      <a
-        href="assets/img/gallery/publications/DIFFRACTION_2.png"
-        title="DIFFRACTION—Spectral Conditioning and N-Boundary Interference Modeling in Modern Runtime Systems"
-        class="glightbox preview-link"
-      ><i class="bi bi-arrows-angle-expand"></i></a>
-      <a
-        href="https://doi.org/10.5281/zenodo.21283421"
-        class="details-link"
-        aria-label="View DOI for DIFFRACTION—Spectral Conditioning and N-Boundary Interference Modeling in Modern Runtime Systems"
-      ><i class="bi bi-link-45deg"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="col-xl col-lg-4 col-md-6">
-  <div class="gallery-item publication-item h-100">
-    <img
-      src="assets/img/gallery/publications/DIFFRACTION3.png"
-      class="img-fluid"
-      alt="DIFFRACTION—Abstract Asymmetrical Systems Modeling"
-    >
-    <div class="gallery-links d-flex align-items-center justify-content-center">
-      <a
-        href="assets/img/gallery/publications/DIFFRACTION3.png"
-        title="DIFFRACTION—Abstract Asymmetrical Systems Modeling"
-        class="glightbox preview-link"
-      ><i class="bi bi-arrows-angle-expand"></i></a>
-      <a
-        href="https://doi.org/10.5281/zenodo.21342631"
-        class="details-link"
-        aria-label="View DOI for DIFFRACTION—Abstract Asymmetrical Systems Modeling"
-      ><i class="bi bi-link-45deg"></i></a>
-    </div>
-  </div>
-</div>
-
-</div>
- <!-- Memoir feature row -->
-<div class="row mb-4">
-  <div class="col-12 text-center">
-    <h2 class="section-title">Systemic Cognitive Integration</h2>
-    <p class="section-subtitle">
-      The interference between science and scientist.
-    </p>
-  </div>
-</div>
-
-<div class="row justify-content-center memoir-row">
-  <div class="col-12">
-    <div class="gallery-item memoir-item">
-      <img
-        src="assets/img/gallery/publications/memoir_cover.png"
-        class="img-fluid"
-        alt="Systemic Cognitive Integration: The Interference Between Science and Scientist"
-      >
-      <div class="gallery-links d-flex align-items-center justify-content-center">
-        <a
-          href="assets/img/gallery/publications/memoir_cover.png"
-          title="Systemic Cognitive Integration: The Interference Between Science and Scientist"
-          class="glightbox preview-link"
-        >
-          <i class="bi bi-arrows-angle-expand"></i>
-        </a>
-        <a
-          href="https://doi.org/10.5281/zenodo.21263621"
-          class="details-link"
-          aria-label="Read Systemic Cognitive Integration"
-        >
-          <i class="bi bi-book"></i>
-        </a>
+      <div class="track" aria-hidden="true">
+        <div class="bar"></div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Causal Layer Integration feature row -->
-<div class="row mb-4">
-  <div class="col-12 text-center">
-    <h2 class="section-title">Causal Layer Integration</h2>
-    <p class="section-subtitle">
-      An Admissibility Framework for Cross-Representation Dynamics.
-    </p>
-  </div>
-</div>
+  <script>
+    (function () {
+      const destination = "https://silicongremlin.io/publications";
+      const countdown = document.getElementById("countdown");
+      let remaining = 8;
 
-<div class="row justify-content-center memoir-row">
-  <div class="col-12">
-    <div class="gallery-item memoir-item">
-      <img
-        src="assets/img/gallery/publications/cli.png"
-        class="img-fluid"
-        alt="Causal Layer Integration: An Admissibility Framework for Cross-Representation Dynamics"
-      >
-      <div class="gallery-links d-flex align-items-center justify-content-center">
-        <a
-          href="assets/img/gallery/publications/cli.png"
-          title="Causal Layer Integration: An Admissibility Framework for Cross-Representation Dynamics"
-          class="glightbox preview-link"
-        >
-          <i class="bi bi-arrows-angle-expand"></i>
-        </a>
-        <a
-          href="https://doi.org/10.5281/zenodo.22114782"
-          class="details-link"
-          aria-label="Read Causal Layer Integration"
-        >
-          <i class="bi bi-book"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+      const interval = window.setInterval(function () {
+        remaining -= 1;
+        countdown.textContent = remaining;
 
-<!-- Boundary-Constrained State Evolution feature row -->
-<div class="row mb-4">
-  <div class="col-12 text-center">
-    <h2 class="section-title">Boundary-Constrained State Evolution</h2>
-    <p class="section-subtitle">
-      Observability Loss in Runtime Systems.
-    </p>
-  </div>
-</div>
-
-<div class="row justify-content-center memoir-row">
-  <div class="col-12">
-    <div class="gallery-item memoir-item">
-      <img
-        src="assets/img/gallery/publications/BCSE.png"
-        class="img-fluid"
-        alt="Boundary-Constrained State Evolution and Observability Loss in Runtime Systems"
-      >
-      <div class="gallery-links d-flex align-items-center justify-content-center">
-        <a
-          href="assets/img/gallery/publications/BCSE.png"
-          title="Boundary-Constrained State Evolution and Observability Loss in Runtime Systems"
-          class="glightbox preview-link"
-        >
-          <i class="bi bi-arrows-angle-expand"></i>
-        </a>
-        <a
-          href="https://doi.org/10.5281/zenodo.22666484"
-          class="details-link"
-          aria-label="Read Boundary-Constrained State Evolution and Observability Loss in Runtime Systems"
-        >
-          <i class="bi bi-book"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
-</section>
-<!-- End Gallery Section -->
-
-<br>
-<br>
-<br>
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Jeffery Kimbrow</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-  
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://kit.fontawesome.com/98cb6f6aab.js" crossorigin="anonymous"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-    <script src="message.js"></script>
-
+        if (remaining <= 0) {
+          window.clearInterval(interval);
+          window.location.replace(destination);
+        }
+      }, 1000);
+    }());
+  </script>
 </body>
-
 </html>
